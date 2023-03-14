@@ -1,0 +1,471 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #171717;
+}
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #171717;
+}
+
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2
+{
+    font-size: 3em;
+    color: #DA0037;
+    font-weight: 500;
+}
+
+.contact .content p
+{
+    color: #EDEDED;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75em;
+    transition: 0.5s;
+}
+
+.container .contactInfo .box:hover .icon
+{
+    background: #DA0037;
+    color: #fff;
+}
+
+.container .contactInfo .box .text
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #DA0037;
+}
+
+.container .contactInfo .txt
+{
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 50px solid #DA0037;
+    line-height: 1em;
+}
+
+.sci
+{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.sci li
+{
+    list-style: none;
+}
+
+.sci li a
+{
+    color: #fff;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.sci li a:hover
+{
+    color: #DA0037;
+}
+
+.ics
+{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.ics li
+{
+    list-style: none;
+}
+
+.ics li a
+{
+    color: #fff;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.ics li a:hover
+{
+    color: #DA0037;
+}
+
+.container .contactFrom
+{
+    position: relative;
+    width: 40%;
+    background: #fff;
+    min-height: 100px;
+    padding: 60px;
+}
+
+.container .contactFrom h2
+{
+    font-size: 2em;
+    columns: #171717;
+    font-weight: 500;
+}
+
+.container .contactFrom .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container .contactFrom .inputBox input,
+.container .contactFrom .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #171717;
+    outline: none;
+    resize: none;
+}
+
+.container .contactFrom .inputBox span
+{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #DA0037;
+    transition: 0.5s;
+}
+
+.container .contactFrom .inputBox input:focus ~ span,
+.container .contactFrom .inputBox textarea:focus ~ span,
+.container .contactFrom .inputBox input:valid ~ span,
+.container .contactFrom .inputBox textarea:valid ~ span
+{
+    color: #DA0037;
+    font-size: 0.9em;
+    transform: translateY(-20px);
+}
+
+.container .contactFrom .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #DA0037;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+p
+{
+    color: #EDEDED;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+
+/* responsive */
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo,
+    .container .contactFrom
+    {
+        width: 100%;
+    }
+    .container .contactFrom
+    {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .contact .content
+    {
+        max-width: 600px;
+        text-align: center;
+    }
+    .contact .content h2 
+    {
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .contact .content p 
+    {
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .container
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .container .contactInfo .box
+    {
+        position: relative;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .container .contactInfo .box .icon
+    {
+        min-width: 55px;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.50em;
+    }
+    .container .contactInfo .box .text
+    {
+        font-size: 0.9em;
+    }
+    .container .contactInfo .box .text h3
+    {
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+    .sci
+    {
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .sci li a 
+    {
+        font-size: 1.5em;
+    }
+    .container .contactFrom h2 
+    {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .container .contactFrom .inputBox input,
+    .container .contactFrom .inputBox textarea
+    {
+        font-size: 0.9em;
+    }
+    .container .contactFrom .inputBox span
+    {
+        font-size: 0.9em;
+    }
+    .btn
+    {
+        font-size: 0.9em;
+    }
+    .pb-3
+    {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 340px) {
+    .contact .content
+    {
+        max-width: 500px;
+        text-align: center;
+    }
+    .contact .content h2
+    {
+        font-size: 1.8em;
+        font-weight: 400;
+    }
+    .contact .content p
+    {
+        font-size: 0.8em;
+        font-weight: 300;
+    }
+    .container .contactFrom .box
+    {
+        position: relative;
+        padding: 10px 0;
+    }
+    .container .contactInfo .box .icon
+    {
+        min-width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3em;
+    }
+    .container .contactInfo .box .text
+    {
+        font-size: 0.7em;
+    }
+    .container .contactInfo .box .text h3
+    {
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    .container .contactInfo .txt
+    {
+       color: #fff;
+       margin-top: 40px;
+       font-weight: 400;
+       font-size: 1em;
+       padding: 5px;
+       border-radius: 50px solid;
+       line-height: 1em;
+    }
+    .sci
+    {
+        gap: 15px;
+        margin: 15px 0;
+    }
+    .container .contactFrom h2
+    {
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    .container .contactFrom .inputBox input,
+    .container .contactFrom .inputBox textarea
+    {
+        font-size: 0.9em;
+    }
+    .container .contactFrom .inputBox span
+    {
+        font-size: 0.8em;
+    }
+    .pb-3
+    {
+        font-size: 0.8em;
+    } 
+}
+@media screen and (max-width: 308px) {
+    .container .contactFrom h2
+    {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .container .contactFrom .inputBox input,
+    .container .contactFrom .inputBox textarea
+    {
+        font-size: 0.8em;
+    }
+    .btn
+    {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 290px) {
+    .contact .content h2
+    {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .contact .content p
+    {
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    .container .contactFrom h2
+    {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+    .container .contactFrom .inputBox input,
+    .container .contactFrom .inputBox textarea
+    {
+        font-size: 0.7em;
+    }
+    .btn
+    {
+        font-size: 0.7em;
+    }
+    .container .contactInfo .txt
+    {
+       color: #fff;
+       margin-top: 30px;
+       font-weight: 400;
+       font-size: 0.9em;
+       padding: 5px;
+       border-radius: 50px solid;
+       line-height: 1em;
+    }
+    .sci
+    {
+        font-size: 0.8em;
+        gap: 10px;
+        margin: 10px 0;
+    }
+}
